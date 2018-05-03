@@ -15,6 +15,8 @@
 		AAFCB11A209B575500565CA2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AAFCB119209B575500565CA2 /* main.m */; };
 		AAFCB124209B575500565CA2 /* AppResume2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = AAFCB123209B575500565CA2 /* AppResume2Tests.m */; };
 		AAFCB12F209B575500565CA2 /* AppResume2UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AAFCB12E209B575500565CA2 /* AppResume2UITests.m */; };
+		AAFCB13E209B5B6C00565CA2 /* Gimnasio.m in Sources */ = {isa = PBXBuildFile; fileRef = AAFCB13D209B5B6C00565CA2 /* Gimnasio.m */; };
+		AAFCB141209B5D7100565CA2 /* GestorGimnasio.m in Sources */ = {isa = PBXBuildFile; fileRef = AAFCB140209B5D7100565CA2 /* GestorGimnasio.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		AAFCB12A209B575500565CA2 /* AppResume2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppResume2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAFCB12E209B575500565CA2 /* AppResume2UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppResume2UITests.m; sourceTree = "<group>"; };
 		AAFCB130209B575500565CA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAFCB13C209B5B6C00565CA2 /* Gimnasio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Gimnasio.h; sourceTree = "<group>"; };
+		AAFCB13D209B5B6C00565CA2 /* Gimnasio.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Gimnasio.m; sourceTree = "<group>"; };
+		AAFCB13F209B5D7100565CA2 /* GestorGimnasio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GestorGimnasio.h; sourceTree = "<group>"; };
+		AAFCB140209B5D7100565CA2 /* GestorGimnasio.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GestorGimnasio.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +116,10 @@
 				AAFCB115209B575500565CA2 /* LaunchScreen.storyboard */,
 				AAFCB118209B575500565CA2 /* Info.plist */,
 				AAFCB119209B575500565CA2 /* main.m */,
+				AAFCB13C209B5B6C00565CA2 /* Gimnasio.h */,
+				AAFCB13D209B5B6C00565CA2 /* Gimnasio.m */,
+				AAFCB13F209B5D7100565CA2 /* GestorGimnasio.h */,
+				AAFCB140209B5D7100565CA2 /* GestorGimnasio.m */,
 			);
 			path = AppResume2;
 			sourceTree = "<group>";
@@ -262,6 +272,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAFCB13E209B5B6C00565CA2 /* Gimnasio.m in Sources */,
+				AAFCB141209B5D7100565CA2 /* GestorGimnasio.m in Sources */,
 				AAFCB10F209B575200565CA2 /* ViewController.m in Sources */,
 				AAFCB11A209B575500565CA2 /* main.m in Sources */,
 				AAFCB10C209B575200565CA2 /* AppDelegate.m in Sources */,
