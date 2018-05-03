@@ -7,9 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TablaGimnasio.h"
+#import "GestorGimnasio.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UITableViewDelegate>
+
+{
+    TablaGimnasio *_tablaDS;
+    GestorGimnasio *_gestor;
+}
+
+@property IBOutlet UITableView *tablaGimnasio;
 
 
 @end
-

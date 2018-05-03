@@ -16,7 +16,8 @@
     Gimnasio *g2 = [[Gimnasio alloc]initConNombre:@"Gimnasio Jordi" ciudad:@"Barcelona" calle:@"Ronda Mitre" capacidad:250];
     Gimnasio *g3 = [[Gimnasio alloc]initConNombre:@"Gimnasio Joan" ciudad:@"Barcelona" calle:@"Av. Gran via" capacidad:200];
     Gimnasio *g4 = [[Gimnasio alloc]initConNombre:@"Gimnasio Lionel" ciudad:@"Barcelona" calle:@"Av. Passeig Maritim" capacidad:300];
-    
+    NSArray *lista = [NSArray arrayWithObjects:g1,g2,g3,g4,nil ];
+    return lista;
 }
 
 @end

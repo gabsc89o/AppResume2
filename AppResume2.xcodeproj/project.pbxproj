@@ -17,6 +17,8 @@
 		AAFCB12F209B575500565CA2 /* AppResume2UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AAFCB12E209B575500565CA2 /* AppResume2UITests.m */; };
 		AAFCB13E209B5B6C00565CA2 /* Gimnasio.m in Sources */ = {isa = PBXBuildFile; fileRef = AAFCB13D209B5B6C00565CA2 /* Gimnasio.m */; };
 		AAFCB141209B5D7100565CA2 /* GestorGimnasio.m in Sources */ = {isa = PBXBuildFile; fileRef = AAFCB140209B5D7100565CA2 /* GestorGimnasio.m */; };
+		AAFCB144209B600200565CA2 /* TablaGimnasio.m in Sources */ = {isa = PBXBuildFile; fileRef = AAFCB143209B600200565CA2 /* TablaGimnasio.m */; };
+		AAFCB147209B677900565CA2 /* DetalleGimnasio.m in Sources */ = {isa = PBXBuildFile; fileRef = AAFCB146209B677900565CA2 /* DetalleGimnasio.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,10 @@
 		AAFCB13D209B5B6C00565CA2 /* Gimnasio.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Gimnasio.m; sourceTree = "<group>"; };
 		AAFCB13F209B5D7100565CA2 /* GestorGimnasio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GestorGimnasio.h; sourceTree = "<group>"; };
 		AAFCB140209B5D7100565CA2 /* GestorGimnasio.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GestorGimnasio.m; sourceTree = "<group>"; };
+		AAFCB142209B600200565CA2 /* TablaGimnasio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TablaGimnasio.h; sourceTree = "<group>"; };
+		AAFCB143209B600200565CA2 /* TablaGimnasio.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TablaGimnasio.m; sourceTree = "<group>"; };
+		AAFCB145209B677900565CA2 /* DetalleGimnasio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetalleGimnasio.h; sourceTree = "<group>"; };
+		AAFCB146209B677900565CA2 /* DetalleGimnasio.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetalleGimnasio.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +126,10 @@
 				AAFCB13D209B5B6C00565CA2 /* Gimnasio.m */,
 				AAFCB13F209B5D7100565CA2 /* GestorGimnasio.h */,
 				AAFCB140209B5D7100565CA2 /* GestorGimnasio.m */,
+				AAFCB142209B600200565CA2 /* TablaGimnasio.h */,
+				AAFCB143209B600200565CA2 /* TablaGimnasio.m */,
+				AAFCB145209B677900565CA2 /* DetalleGimnasio.h */,
+				AAFCB146209B677900565CA2 /* DetalleGimnasio.m */,
 			);
 			path = AppResume2;
 			sourceTree = "<group>";
@@ -272,9 +282,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAFCB147209B677900565CA2 /* DetalleGimnasio.m in Sources */,
 				AAFCB13E209B5B6C00565CA2 /* Gimnasio.m in Sources */,
 				AAFCB141209B5D7100565CA2 /* GestorGimnasio.m in Sources */,
 				AAFCB10F209B575200565CA2 /* ViewController.m in Sources */,
+				AAFCB144209B600200565CA2 /* TablaGimnasio.m in Sources */,
 				AAFCB11A209B575500565CA2 /* main.m in Sources */,
 				AAFCB10C209B575200565CA2 /* AppDelegate.m in Sources */,
 			);
