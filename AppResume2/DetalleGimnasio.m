@@ -30,6 +30,6 @@
     _lbCalle.text = _gimnasio.calle;
     _lbCapacidad.text = [NSString stringWithFormat:@"%d",_gimnasio.capacidad];
 }
-//-(IBAction)<#selector#>:(id)sender)
+
 
 @end
