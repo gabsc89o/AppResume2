@@ -18,6 +18,6 @@
 }
 
 @property IBOutlet UITableView *tablaGimnasio;
-
+@property IBOutlet UITextField *tftext;
 
 @end

@@ -12,7 +12,7 @@
 
 @interface TablaGimnasio : NSObject<UITableViewDataSource>
 
-@property NSArray *gimnasiosArr;
+@property NSMutableArray *gimnasiosArr;
 
 -(Gimnasio *) gimnasioAt:(NSInteger)pos;
 

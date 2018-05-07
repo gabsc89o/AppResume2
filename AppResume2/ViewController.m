@@ -14,7 +14,7 @@
 @end
 
 @implementation ViewController
-
+int var=1;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
@@ -23,9 +23,16 @@
     [_tablaGimnasio setDataSource:_tablaDS];
     [_tablaGimnasio setDelegate:self];
 }
-
+-(IBAction)inserTest:(id)sender{
+    Gimnasio *gn = [[Gimnasio alloc]initConNombre:@"Gimnasio New" ciudad:@"Barcelona" calle:@"Gran via" capacidad:100];
+    [_gestor addGimnasio:gn];
+    [_tablaDS setGimnasiosArr:[_gestor listarGimnasio:2]];
+    [_tablaGimnasio reloadData];
+    NSLog(@"numero2: %d",[_gestor listarGimnasio:2].count);
+}
 -(void) viewWillAppear:(BOOL)animated{
-    [_tablaDS setGimnasiosArr:[_gestor listarGimnasio]];
+    [_tablaDS setGimnasiosArr:[_gestor listarGimnasio:var]];
+    var=2;
     [_tablaGimnasio reloadData];
 }
 
@@ -39,18 +46,20 @@
         if ([sender isKindOfClass:[Gimnasio class]]) {
             DetalleGimnasio *dg = (DetalleGimnasio *)[segue destinationViewController];
             [dg setGimnasio:(Gimnasio *)sender];
+            [dg setArrSegue2: [_gestor listarGimnasio:2] ];
+            //[dg setGestor2:_gestor];
+            [dg setTablaDS2:(TablaGimnasio *)sender];
         }
     }
 }
 
--(IBAction)volver:(UIStoryboardSegue *)segue{
-    
-}
+-(IBAction)volver:(UIStoryboardSegue *)segue{}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 
 @end

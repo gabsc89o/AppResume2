@@ -7,7 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "Gimnasio.h"
 @interface GestorGimnasio : NSObject
--(NSArray *) listarGimnasio;
+
+{
+    NSMutableArray *lista;
+}
+
+-(NSMutableArray *) listarGimnasio:(int )op;
+-(NSMutableArray *) addGimnasio:(Gimnasio *)element;
+-(NSMutableArray *) itself:(NSMutableArray *)varlista;
 @end

@@ -22,7 +22,31 @@
                                 <rect key="frame" x="16" y="36" width="343" height="573"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="b7U-qe-IbM"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="hR0-r4-Dwz"/>
+                                </connections>
                             </tableView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6yx-oW-Rx3">
+                                <rect key="frame" x="16" y="617" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="yWy-YI-WcE"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Va-fM-dQw">
+                                <rect key="frame" x="175" y="617" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="inserTest:" destination="BYZ-38-t0r" eventType="touchDown" id="bEB-Ie-IF8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -30,6 +54,7 @@
                     <size key="freeformSize" width="375" height="667"/>
                     <connections>
                         <outlet property="tablaGimnasio" destination="xS0-WT-wVM" id="KeH-08-72e"/>
+                        <outlet property="tftext" destination="6yx-oW-Rx3" id="gVg-Pm-fnn"/>
                         <segue destination="YKa-Xp-uaJ" kind="show" identifier="verDetalle" id="1zt-vJ-XB7"/>
                     </connections>
                 </viewController>
@@ -74,7 +99,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ir2-bd-1Wy">
-                                <rect key="frame" x="156" y="428" width="62" height="30"/>
+                                <rect key="frame" x="78" y="431" width="62" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Back"/>
@@ -82,15 +107,56 @@
                                     <segue destination="Dwl-I5-Qil" kind="unwind" unwindAction="volver:" id="w1N-6E-HfT"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="68e-rr-9cr">
+                                <rect key="frame" x="53" y="118" width="306" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fSp-bY-xoa">
+                                <rect key="frame" x="53" y="191" width="306" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NWA-gQ-aHE">
+                                <rect key="frame" x="53" y="279" width="306" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z9e-iY-e89">
+                                <rect key="frame" x="53" y="352" width="306" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGo-1W-cgo">
+                                <rect key="frame" x="224" y="431" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="insertObj:" destination="YKa-Xp-uaJ" eventType="touchDown" id="9wm-QF-i5X"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="fTs-7k-zx2"/>
                     </view>
                     <connections>
-                        <outlet property="lbCalle" destination="ijI-EK-tuI" id="ZML-cd-kb8"/>
-                        <outlet property="lbCapacidad" destination="gOD-z0-lG0" id="0Tp-lG-ZJL"/>
-                        <outlet property="lbCiudad" destination="wUQ-M3-aF5" id="hu6-Ru-sYe"/>
-                        <outlet property="lbNombre" destination="QTQ-6G-wGw" id="t3B-Mv-OUs"/>
+                        <outlet property="lbCalle" destination="ijI-EK-tuI" id="xOI-MN-YqW"/>
+                        <outlet property="lbCapacidad" destination="gOD-z0-lG0" id="XCy-bn-Xx8"/>
+                        <outlet property="lbCiudad" destination="wUQ-M3-aF5" id="Uvp-HV-qcD"/>
+                        <outlet property="lbNombre" destination="QTQ-6G-wGw" id="P7M-xx-lYW"/>
+                        <outlet property="tfCalle" destination="fSp-bY-xoa" id="uk1-DP-WW4"/>
+                        <outlet property="tfCapacidad" destination="Z9e-iY-e89" id="Uc6-I3-PUc"/>
+                        <outlet property="tfCiudad" destination="NWA-gQ-aHE" id="gYu-Zc-jAz"/>
+                        <outlet property="tfNombre" destination="68e-rr-9cr" id="MqR-Kn-qMS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1lW-aT-h5h" userLabel="First Responder" sceneMemberID="firstResponder"/>
